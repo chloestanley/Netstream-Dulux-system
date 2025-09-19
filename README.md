@@ -1,4 +1,4 @@
-# 📦 Dulux Load Control System (LCS)
+# 📦 Dulux Load Control System (LCNS)
 
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.8-blue)](https://dotnet.microsoft.com/)  
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-SSMS-red)](https://learn.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)  
