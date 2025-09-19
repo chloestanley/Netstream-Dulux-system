@@ -1,8 +1,3 @@
-Got it ✅ — I’ll turn your full draft into a **polished GitHub-ready `README.md`** that’s properly formatted with markdown anchors, emojis, code blocks, flow diagrams, and copy-paste-ready sections.
-
-Here’s the complete version you can drop into your repo:
-
-```markdown
 # 📦 Dulux Load Control System (LCS)
 
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.8-blue)](https://dotnet.microsoft.com/)  
