@@ -1,0 +1,402 @@
+﻿@model DULUXFINALPART1.Models.GuardsPage
+
+@{
+    ViewData["Title"] = "Create New Guard Entry";
+}
+
+<h1 class="display-6 text-success mb-4 text-center">Create Guard Entry</h1>
+<h4 class="h5 text-secondary text-center">Guards Page Form</h4>
+<hr />
+
+<!-- 🔔 Instructions -->
+<div class="alert alert-info shadow-sm mb-4">
+    <h5 class="fw-bold text-primary">📝 Instructions:</h5>
+    <ul>
+        <li>Fill in both the <strong>Guard</strong> and <strong>Driver</strong> details with accurate names and security card numbers.</li>
+        <li>Set the <strong>Date and Time</strong> when the entry is being made.</li>
+        <li>Upload all required images: Driver’s License, Vehicle License, Trailer License, and Shipment Image.</li>
+        <li>Select the appropriate <strong>Acceptance Status</strong> (Accept or Decline).</li>
+        <li>Check the <strong>Send to Control Room</strong> box if the entry should be forwarded to the control room.</li>
+        <li>Click <strong>Create</strong> to submit the form. All fields marked in red are required.</li>
+    </ul>
+</div>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="container px-2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <!-- Shipment Dropdown -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Shipment Info</legend>
+                    <div class="form-group mb-3">
+                        <label asp-for="ScanImageId" class="fw-bold text-success">Select Shipment</label>
+                        <select asp-for="ScanImageId" class="form-control border-success" asp-items="ViewBag.Shipments">
+                            <option value="">-- Select Shipment --</option>
+                        </select>
+                        <span asp-validation-for="ScanImageId" class="text-danger"></span>
+                    </div>
+                </fieldset>
+
+                <!-- Guard Details -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Guard Details</legend>
+                    <div class="form-group mb-3">
+                        <label asp-for="Guard_Name" class="fw-bold text-success">Guard Name</label>
+                        <input asp-for="Guard_Name" class="form-control border-success" placeholder="Enter guard name" />
+                        <span asp-validation-for="Guard_Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Guard_SecurityCard_No" class="fw-bold text-success">Security Card No</label>
+                        <input asp-for="Guard_SecurityCard_No" class="form-control border-success" placeholder="Enter security card number" />
+                        <span asp-validation-for="Guard_SecurityCard_No" class="text-danger"></span>
+                    </div>
+                </fieldset>
+
+                <!-- Driver Details -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Driver Details</legend>
+                    <div class="form-group mb-3">
+                        <label asp-for="Driver_Name" class="fw-bold text-success">Driver Name</label>
+                        <input asp-for="Driver_Name" class="form-control border-success" placeholder="Enter driver name" />
+                        <span asp-validation-for="Driver_Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Driver_SecurityCard_No" class="fw-bold text-success">Driver Security Card No</label>
+                        <input asp-for="Driver_SecurityCard_No" class="form-control border-success" placeholder="Enter driver security card number" />
+                        <span asp-validation-for="Driver_SecurityCard_No" class="text-danger"></span>
+                    </div>
+                </fieldset>
+
+                <!-- Date and Image Uploads -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Date and Images</legend>
+                    <div class="form-group mb-3">
+                        <label asp-for="DateTime" class="fw-bold text-success">Date and Time</label>
+                        <input asp-for="DateTime" type="datetime-local" class="form-control border-success" id="DateTimeInput" />
+                        <span asp-validation-for="DateTime" class="text-danger"></span>
+                    </div>
+
+                    <script>
+                        window.addEventListener('DOMContentLoaded', () => {
+                            const dtInput = document.getElementById('DateTimeInput');
+                            if (dtInput) {
+                                const now = new Date();
+                                const year = now.getFullYear();
+                                const month = String(now.getMonth() + 1).padStart(2, '0');
+                                const day = String(now.getDate()).padStart(2, '0');
+                                const hours = String(now.getHours()).padStart(2, '0');
+                                const minutes = String(now.getMinutes()).padStart(2, '0');
+                                dtInput.value = `${year}-${month}-${day}T${hours}:${minutes}`;
+                            }
+                        });
+                    </script>
+
+                    <label class="fw-bold text-success">Upload or Scan Documents</label>
+
+                    <div class="form-group mb-3">
+                        <label class="text-success">Shipment Image</label>
+                        <input type="file" class="form-control border-success" name="imageFiles" />
+                    </div>
+
+                    <!-- Vehicle License Scanner - Collapsible Section -->
+                    <div class="card mb-4 border-success">
+                        <div class="card-header bg-success text-white" data-bs-toggle="collapse" data-bs-target="#vehicleLicenseSection" style="cursor: pointer;">
+                            🚗 Vehicle License Scanner
+                        </div>
+                        <div class="collapse show" id="vehicleLicenseSection">
+                            <div class="card-body">
+                                <!-- Scanner Input -->
+                                <div class="form-group mb-3">
+                                    <label class="text-success fw-bold">Scanned Vehicle License Raw Data</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-success fs-5 py-3" id="rawVehicleLicenseData" placeholder="Scan vehicle license barcode" oninput="parseVehicleLicenseData(this.value)" />
+                                        <button type="button" class="btn btn-outline-danger" onclick="clearVehicleFields()">🧹 Clear</button>
+                                    </div>
+                                </div>
+
+                                <!-- Structured Fields -->
+                                <div class="row g-3">
+                                    <div class="col-md-4"><label class="text-success">Disc Number</label><input asp-for="VehicleLicenseDiscNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Registration Number</label><input asp-for="VehicleRegNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Plate Number</label><input asp-for="VehiclePlateNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Vehicle Type</label><input asp-for="VehicleType" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Make</label><input asp-for="VehicleMake" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Model</label><input asp-for="VehicleModel" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Color</label><input asp-for="VehicleColor" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">VIN</label><input asp-for="VehicleVin" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Engine Number</label><input asp-for="VehicleEngineNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Expiry Date</label><input asp-for="VehicleExpiryDate" class="form-control fs-5 py-3" readonly /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function parseVehicleLicenseData(data) {
+                            const parts = data.split('%').filter(p => p.trim() !== "");
+
+                            const parsed = {
+                                VehicleLicenseDiscNumber: parts[4] || '',
+                                VehicleRegNumber: parts[5] || '',
+                                VehiclePlateNumber: parts[6] || '',
+                                VehicleType: parts[7] || '',
+                                VehicleMake: parts[8] || '',
+                                VehicleModel: parts[9] || '',
+                                VehicleColor: parts[10] || '',
+                                VehicleVin: parts[11] || '',
+                                VehicleEngineNumber: parts[12] || '',
+                                VehicleExpiryDate: parts[13] || ''
+                            };
+
+                            for (const key in parsed) {
+                                const input = document.querySelector(`[name="${key}"]`);
+                                if (input) input.value = parsed[key];
+                            }
+
+                            // Highlight expired licenses
+                            const expiryInput = document.querySelector('[name="VehicleExpiryDate"]');
+                            if (parsed.VehicleExpiryDate && expiryInput) {
+                                const today = new Date();
+                                const expiry = new Date(parsed.VehicleExpiryDate);
+                                if (expiry < today) {
+                                    expiryInput.classList.add('bg-danger', 'text-white');
+                                    expiryInput.title = "License has expired";
+                                } else {
+                                    expiryInput.classList.remove('bg-danger', 'text-white');
+                                    expiryInput.title = "";
+                                }
+                            }
+                        }
+
+                        function clearVehicleFields() {
+                            const keys = [
+                                "VehicleLicenseDiscNumber", "VehicleRegNumber", "VehiclePlateNumber",
+                                "VehicleType", "VehicleMake", "VehicleModel", "VehicleColor",
+                                "VehicleVin", "VehicleEngineNumber", "VehicleExpiryDate"
+                            ];
+                            keys.forEach(key => {
+                                const input = document.querySelector(`[name="${key}"]`);
+                                if (input) {
+                                    input.value = '';
+                                    input.classList.remove('bg-danger', 'text-white');
+                                    input.title = '';
+                                }
+                            });
+                        }
+                    </script>
+
+                    <!-- Trailer License Scanner - Collapsible Section -->
+                    <div class="card mb-4 border-success">
+                        <div class="card-header bg-success text-white" data-bs-toggle="collapse" data-bs-target="#trailerLicenseSection" style="cursor: pointer;">
+                            🚛 Trailer License Scanner
+                        </div>
+                        <div class="collapse show" id="trailerLicenseSection">
+                            <div class="card-body">
+                                <!-- Scanner Input -->
+                                <div class="form-group mb-3">
+                                    <label class="text-success fw-bold">Scanned Trailer License Raw Data</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-success fs-5 py-3" id="rawTrailerLicenseData" placeholder="Scan trailer license barcode" oninput="parseTrailerLicenseData(this.value)" />
+                                        <button type="button" class="btn btn-outline-danger" onclick="clearTrailerFields()">🧹 Clear</button>
+                                    </div>
+                                </div>
+
+                                <!-- Structured Trailer License Fields -->
+                                <div class="row g-3">
+                                    <div class="col-md-4"><label class="text-success">Disc Number</label><input asp-for="TrailerDiscNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Registration Number</label><input asp-for="TrailerRegNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Plate Number</label><input asp-for="TrailerPlateNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Trailer Type</label><input asp-for="TrailerType" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Make</label><input asp-for="TrailerMake" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Model</label><input asp-for="TrailerModel" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Color</label><input asp-for="TrailerColor" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">VIN</label><input asp-for="TrailerVin" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Engine Number</label><input asp-for="TrailerEngineNumber" class="form-control fs-5 py-3" readonly /></div>
+                                    <div class="col-md-4"><label class="text-success">Expiry Date</label><input asp-for="TrailerExpiryDate" class="form-control fs-5 py-3" readonly /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function parseTrailerLicenseData(data) {
+                            const parts = data.split('%').filter(p => p.trim() !== "");
+
+                            const parsed = {
+                                TrailerDiscNumber: parts[4] || '',
+                                TrailerRegNumber: parts[5] || '',
+                                TrailerPlateNumber: parts[6] || '',
+                                TrailerType: parts[7] || '',
+                                TrailerMake: parts[8] || '',
+                                TrailerModel: parts[9] || '',
+                                TrailerColor: parts[10] || '',
+                                TrailerVin: parts[11] || '',
+                                TrailerEngineNumber: parts[12] || '',
+                                TrailerExpiryDate: parts[13] || ''
+                            };
+
+                            for (const key in parsed) {
+                                const input = document.querySelector(`[name="${key}"]`);
+                                if (input) input.value = parsed[key];
+                            }
+
+                            const expiryInput = document.querySelector('[name="TrailerExpiryDate"]');
+                            if (parsed.TrailerExpiryDate && expiryInput) {
+                                const today = new Date();
+                                const expiry = new Date(parsed.TrailerExpiryDate);
+                                if (expiry < today) {
+                                    expiryInput.classList.add('bg-danger', 'text-white');
+                                    expiryInput.title = "License has expired";
+                                } else {
+                                    expiryInput.classList.remove('bg-danger', 'text-white');
+                                    expiryInput.title = "";
+                                }
+                            }
+                        }
+
+                        function clearTrailerFields() {
+                            const keys = [
+                                "TrailerDiscNumber", "TrailerRegNumber", "TrailerPlateNumber",
+                                "TrailerType", "TrailerMake", "TrailerModel", "TrailerColor",
+                                "TrailerVin", "TrailerEngineNumber", "TrailerExpiryDate"
+                            ];
+                            keys.forEach(key => {
+                                const input = document.querySelector(`[name="${key}"]`);
+                                if (input) {
+                                    input.value = '';
+                                    input.classList.remove('bg-danger', 'text-white');
+                                    input.title = '';
+                                }
+                            });
+                        }
+                    </script>
+                </fieldset>
+
+                <!-- Signature -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Signature</legend>
+                    <div class="w-100">
+                        <canvas id="signatureCanvas" class="w-100" height="200" style="border:1px solid #198754; border-radius: 5px;"></canvas>
+                    </div>
+                    <input type="hidden" id="SignatureData" name="Signature" asp-for="Signature" />
+                    <div class="mt-2 d-flex flex-column flex-md-row gap-2">
+                        <button type="button" class="btn btn-outline-danger w-100" onclick="clearCanvas()">Clear Signature</button>
+                        <button type="button" class="btn btn-outline-success w-100" onclick="saveSignature()">Save Signature</button>
+                    </div>
+                </fieldset>
+
+                <!-- Acceptance -->
+                <fieldset class="border border-success p-3 rounded mb-4">
+                    <legend class="text-success fw-bold">Acceptance Status</legend>
+                    <div class="form-group mb-3">
+                        <label asp-for="Acceptance" class="fw-bold text-success">Acceptance</label>
+                        <select asp-for="Acceptance" class="form-control border-success">
+                            <option value="">Select Acceptance Status</option>
+                            <option value="Accept">Yes, I Accept</option>
+                            <option value="Decline">No, I Decline</option>
+                        </select>
+                        <span asp-validation-for="Acceptance" class="text-danger"></span>
+                    </div>
+                </fieldset>
+
+                <!-- Checkbox -->
+                <div class="form-group form-check mb-4">
+                    <input class="form-check-input border-success" type="checkbox" asp-for="SendToControlRoom" id="SendToControlRoom" />
+                    <label class="form-check-label text-success fw-bold" for="SendToControlRoom">
+                        @Html.DisplayNameFor(model => model.SendToControlRoom)
+                    </label>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-group mb-5">
+                    <input type="submit" value="Create" class="btn btn-success btn-lg w-100 shadow" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+        let canvas = document.getElementById('signatureCanvas');
+        let ctx = canvas.getContext('2d');
+        let drawing = false;
+
+        function getPosition(e) {
+            let rect = canvas.getBoundingClientRect();
+            if (e.touches && e.touches.length > 0) {
+                return {
+                    x: e.touches[0].clientX - rect.left,
+                    y: e.touches[0].clientY - rect.top
+                };
+            } else {
+                return {
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top
+                };
+            }
+        }
+
+        canvas.addEventListener('mousedown', (e) => {
+            drawing = true;
+            let pos = getPosition(e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!drawing) return;
+            let pos = getPosition(e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.strokeStyle = '#198754';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            drawing = false;
+        });
+
+        canvas.addEventListener('mouseout', () => {
+            drawing = false;
+        });
+
+        // Touch events for mobile devices
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            drawing = true;
+            let pos = getPosition(e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            if (!drawing) return;
+            let pos = getPosition(e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.strokeStyle = '#198754';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        });
+
+        canvas.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            drawing = false;
+        });
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            document.getElementById('SignatureData').value = "";
+        }
+
+        function saveSignature() {
+            let dataURL = canvas.toDataURL('image/png');
+            document.getElementById('SignatureData').value = dataURL;
+            alert("Signature saved!");
+        }
+    </script>
+}

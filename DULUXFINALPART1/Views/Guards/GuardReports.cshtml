@@ -1,0 +1,74 @@
+﻿@model IEnumerable<DULUXFINALPART1.Models.GuardsPage>
+
+@{
+    ViewData["Title"] = "Guard Reports";
+}
+
+<div class="container mt-4">
+    <div class="card shadow rounded-4">
+        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">🛡️ Guards Report</h3>
+            <a href="@Url.Action("DownloadAllGuardsAsCsv", "Guards")" class="btn btn-light btn-sm">
+                ⬇️ Download All Guards Data
+            </a>
+        </div>
+
+        <div class="card-body">
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-warning text-center">
+                    @TempData["Message"]
+                </div>
+            }
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>👮 Guard Name</th>
+                                <th>🆔 Guard Card No</th>
+                                <th>🚗 Driver Name</th>
+                                <th>🆔 Driver Card No</th>
+                                <th>🕒 Date/Time</th>
+                                <th>✅ Acceptance</th>
+                                <th>📤 Sent to Control Room</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Guard_Name)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Guard_SecurityCard_No)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Driver_Name)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Driver_SecurityCard_No)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.DateTime)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Acceptance)</td>
+                                    <td>
+                                        @if (item.SendToControlRoom)
+                                        {
+                                            <span class="badge bg-success">✔ Sent</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">✘ Not Sent</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning text-center mb-0">
+                    ⚠️ No guard records available.
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

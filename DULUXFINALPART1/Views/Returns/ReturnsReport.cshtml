@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DULUXFINALPART1.Models.Return>
+
+<div class="container mt-4">
+    <div class="card shadow rounded-4">
+        <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">↩️ Returns Report</h3>
+            <a href="@Url.Action("DownloadAllReturnsAsCsv", "Returns")" class="btn btn-light btn-sm">
+                ⬇️ Download All Returns Data
+            </a>
+        </div>
+
+        <div class="card-body">
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>📦 Delivery Number</th>
+                                <th>📝 Comments</th>
+                                <th>🚚 Shipment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.DeliveryNumber</td>
+                                    <td>@item.Comments</td>
+                                    <td>@item.ScanImage?.Shipment</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning text-center mb-0" role="alert">
+                    ⚠️ No returns data found.
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,1658 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DULUXFINALPART14 - working copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\css\\speed.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\css\\speed.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\scan_imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\scan_imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\duluxfinalpart1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\duluxfinalpart1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\returnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\returnscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\guardspagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\guardspagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Chloe\u0027 Stanley\\AppData\\Local\\Temp\\d79c65b2-5a93-490e-bc4f-2eb8d0d9aca8_DULUX final sep.zip.DULUX final sep.zip\\DULUX JULY\\TUSAHR AND JONAH\\DULUXFINALPART18\\DULUXFINALPART14\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\duluxfinalpart1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\duluxfinalpart1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\guardnotificationnote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\guardnotificationnote.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250502115034_imageupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250502115034_imageupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\models\\guardspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\models\\guardspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\guardreports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\guardreports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\models\\signinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\models\\signinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\models\\scan_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\models\\scan_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\models\\return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\models\\return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\guards\\links.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\guards\\links.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\note.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\note.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\home\\lcn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\home\\lcn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\lcnreportprint.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\lcnreportprint.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\returnsreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\returnsreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\fastest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\fastest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\top_shipments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\top_shipments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\slowest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\slowest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\scan_image\\time.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\scan_image\\time.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tusha\\AppData\\Local\\Temp\\.vsdbgsrc\\985b7facf3174781b4fd5532889c51d51fa6630239d8f1c1972eed5c38b6f6a0\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\lib\\dulux_images.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\lib\\dulux_images.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\lib\\can-you-paint-over-wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\lib\\can-you-paint-over-wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\wwwroot\\lib\\camera3.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\wwwroot\\lib\\camera3.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131908_aassssssss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131305_mmmmmmmmmmmmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130625_LCN.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130452_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125358_Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125058_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424124440_AHHHHHHHHHH.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122716_TEST2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122322_Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424121742_TIMESTAMPS.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\returns\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\returns\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\Speed.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\lib\\speedometer.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\js\\Scan_Image.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250429081204_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250429081204_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505061945_scan_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505061945_scan_image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250504192858_ghgtt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250504192858_ghgtt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250504191842_ght.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250504191842_ght.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250502130632_kjl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250502130632_kjl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250502130124_addsignaturetoguardspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250502130124_addsignaturetoguardspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505073326_fgtgyy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505073326_fgtgyy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505131118_ghht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505131118_ghht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505125723_gstyuek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505125723_gstyuek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505081707_kllkll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505081707_kllkll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505074850_sdsddssdds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505074850_sdsddssdds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250505222644_dfwett.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250505222644_dfwett.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250704095531_hyyh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250704095531_hyyh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250704090742_hjju.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250704090742_hjju.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|c:\\duluxfinalpart14 - working copy\\duluxfinalpart1\\migrations\\20250708063948_fdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89ADFF7-F31E-42AD-B92C-FC73E09B8BD2}|DULUXFINALPART1\\DULUXFINALPART1.csproj|solutionrelative:duluxfinalpart1\\migrations\\20250708063948_fdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Scan_ImageController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\Scan_ImageController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\Scan_ImageController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\Scan_ImageController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\Scan_ImageController.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAmwHsBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:12:32.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\appsettings.json",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\appsettings.json",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\appsettings.json",
+              "RelativeToolTip": "DULUXFINALPART1\\appsettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-16T08:07:57.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DULUXFINALPART1",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "RelativeToolTip": "DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T11:39:03.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T06:51:36.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T09:37:04.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Create.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Create.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Create.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:17:48.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-17T21:46:15.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T06:52:58.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:13:23.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Speed.css",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-17T21:49:58.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.css",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\Index.css",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\css\\Index.css",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\css\\Index.css",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\css\\Index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-20T14:40:18.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\ChatbotController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:59:54.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Program.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Program.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Program.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:18:13.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReturnsController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\ReturnsController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\ReturnsController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\ReturnsController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\ReturnsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T08:10:42.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\appsettings.Development.json",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\appsettings.Development.json",
+              "RelativeToolTip": "DULUXFINALPART1\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-16T05:57:25.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GuardsPagesController.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\GuardsPagesController.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Controllers\\GuardsPagesController.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Controllers\\GuardsPagesController.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Controllers\\GuardsPagesController.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAmwEMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:12:04.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBJwBYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:19:32.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DULUXFINALPART1.csproj",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "RelativeToolTip": "DULUXFINALPART1\\DULUXFINALPART1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T10:07:06.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "DULUXFINALPART1\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-24T12:12:11.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GuardNotificationNote.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\GuardNotificationNote.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\GuardNotificationNote.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\GuardNotificationNote.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\GuardNotificationNote.cshtml",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAUwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T20:41:29.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Chloe\u0027 Stanley\\AppData\\Local\\Temp\\d79c65b2-5a93-490e-bc4f-2eb8d0d9aca8_DULUX final sep.zip.DULUX final sep.zip\\DULUX JULY\\TUSAHR AND JONAH\\DULUXFINALPART18\\DULUXFINALPART14\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Chloe\u0027 Stanley\\AppData\\Local\\Temp\\d79c65b2-5a93-490e-bc4f-2eb8d0d9aca8_DULUX final sep.zip.DULUX final sep.zip\\DULUX JULY\\TUSAHR AND JONAH\\DULUXFINALPART18\\DULUXFINALPART14\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Chloe\u0027 Stanley\\AppData\\Local\\Temp\\d79c65b2-5a93-490e-bc4f-2eb8d0d9aca8_DULUX final sep.zip.DULUX final sep.zip\\DULUX JULY\\TUSAHR AND JONAH\\DULUXFINALPART18\\DULUXFINALPART14\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs [Read Only]",
+              "RelativeToolTip": "..\\Users\\Chloe\u0027 Stanley\\AppData\\Local\\Temp\\d79c65b2-5a93-490e-bc4f-2eb8d0d9aca8_DULUX final sep.zip.DULUX final sep.zip\\DULUX JULY\\TUSAHR AND JONAH\\DULUXFINALPART18\\DULUXFINALPART14\\DULUXFINALPART1\\Data\\ApplicationDbContext.cs [Read Only]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T06:05:30.185Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250502115034_ImageUpload.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502115034_ImageUpload.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250502115034_ImageUpload.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502115034_ImageUpload.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250502115034_ImageUpload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:50:34.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "20250704095531_hyyh.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250704095531_hyyh.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250704095531_hyyh.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250704095531_hyyh.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250704095531_hyyh.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T09:55:31.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "20250704090742_hjju.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250704090742_hjju.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250704090742_hjju.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250704090742_hjju.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250704090742_hjju.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T09:07:42.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20250505131118_ghht.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505131118_ghht.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505131118_ghht.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505131118_ghht.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505131118_ghht.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T13:11:18.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "20250505222644_dfwett.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505222644_dfwett.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505222644_dfwett.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505222644_dfwett.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505222644_dfwett.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T22:26:44.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DULUXFINALPART1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-04T10:32:09.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "20250708063948_fdt.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250708063948_fdt.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250708063948_fdt.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250708063948_fdt.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250708063948_fdt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T06:39:48.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20250505125723_gstyuek.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505125723_gstyuek.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505125723_gstyuek.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505125723_gstyuek.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505125723_gstyuek.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T12:57:23.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "20250505081707_kllkll.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505081707_kllkll.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505081707_kllkll.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505081707_kllkll.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505081707_kllkll.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:17:07.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "20250505074850_SDSDDSSDDS.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505074850_SDSDDSSDDS.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505074850_SDSDDSSDDS.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505074850_SDSDDSSDDS.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505074850_SDSDDSSDDS.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T07:48:51.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20250505073326_fgtgyy.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505073326_fgtgyy.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505073326_fgtgyy.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505073326_fgtgyy.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505073326_fgtgyy.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T07:33:26.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20250505061945_Scan_Image.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505061945_Scan_Image.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250505061945_Scan_Image.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250505061945_Scan_Image.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250505061945_Scan_Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T06:19:45.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Links.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Links.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Links.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Links.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Links.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T21:03:21.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GuardReports.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\GuardReports.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\GuardReports.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\GuardReports.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\GuardReports.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwCoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T21:01:40.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ReturnsReport.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\ReturnsReport.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\ReturnsReport.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\ReturnsReport.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\ReturnsReport.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T20:59:58.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LCNReportPrint.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\LCNReportPrint.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\LCNReportPrint.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\LCNReportPrint.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\LCNReportPrint.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T20:05:10.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "20250504192858_ghgtt.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250504192858_ghgtt.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250504192858_ghgtt.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250504192858_ghgtt.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250504192858_ghgtt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T19:28:58.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20250504191842_ght.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250504191842_ght.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250504191842_ght.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250504191842_ght.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250504191842_ght.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T19:18:42.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "20250502130632_kjl.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502130632_kjl.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250502130632_kjl.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502130632_kjl.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250502130632_kjl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:06:32.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "20250502130124_AddSignatureToGuardsPage.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502130124_AddSignatureToGuardsPage.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250502130124_AddSignatureToGuardsPage.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250502130124_AddSignatureToGuardsPage.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250502130124_AddSignatureToGuardsPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T13:01:24.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Slowest.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Slowest.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Slowest.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Slowest.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Slowest.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T08:33:51.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Top_Shipments.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Top_Shipments.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Top_Shipments.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Top_Shipments.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Top_Shipments.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T08:31:18.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Fastest.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Fastest.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Fastest.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Fastest.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Fastest.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwBUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T08:20:44.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20250429081204_InitialCreate.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250429081204_InitialCreate.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Migrations\\20250429081204_InitialCreate.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Migrations\\20250429081204_InitialCreate.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Migrations\\20250429081204_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:12:04.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tusha\\AppData\\Local\\Temp\\.vsdbgsrc\\985b7facf3174781b4fd5532889c51d51fa6630239d8f1c1972eed5c38b6f6a0\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Users\\tusha\\AppData\\Local\\Temp\\.vsdbgsrc\\985b7facf3174781b4fd5532889c51d51fa6630239d8f1c1972eed5c38b6f6a0\\Program.cs",
+              "ToolTip": "C:\\Users\\tusha\\AppData\\Local\\Temp\\.vsdbgsrc\\985b7facf3174781b4fd5532889c51d51fa6630239d8f1c1972eed5c38b6f6a0\\Program.cs",
+              "RelativeToolTip": "..\\Users\\tusha\\AppData\\Local\\Temp\\.vsdbgsrc\\985b7facf3174781b4fd5532889c51d51fa6630239d8f1c1972eed5c38b6f6a0\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T08:05:49.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "dulux_images.png -  [English (United States)] - PNG [266x190, 8 bit, PNG]",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\dulux_images.png",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\lib\\dulux_images.png",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\dulux_images.png -  [English (United States)] - PNG [266x190, 8 bit, PNG]",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\lib\\dulux_images.png -  [English (United States)] - PNG [266x190, 8 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-29T07:42:59.469Z",
+              "EditorCaption": " -  [English (United States)] - PNG [266x190, 8 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg -  [English (United States)] - Bitmap [4000x2668, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\lib\\Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg -  [English (United States)] - Bitmap [4000x2668, 24 bit, JPG]",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\lib\\Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg -  [English (United States)] - Bitmap [4000x2668, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-29T07:42:57.795Z",
+              "EditorCaption": " -  [English (United States)] - Bitmap [4000x2668, 24 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Camera3.jpg -  [English (United States)] - Bitmap [980x980, 8 bit, JPG]",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\Camera3.jpg",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\wwwroot\\lib\\Camera3.jpg",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\wwwroot\\lib\\Camera3.jpg -  [English (United States)] - Bitmap [980x980, 8 bit, JPG]",
+              "RelativeToolTip": "DULUXFINALPART1\\wwwroot\\lib\\Camera3.jpg -  [English (United States)] - Bitmap [980x980, 8 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-29T07:42:55.703Z",
+              "EditorCaption": " -  [English (United States)] - Bitmap [980x980, 8 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T07:37:53.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T07:37:48.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T07:37:44.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ManageNavPages.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:36:40.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T13:38:30.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20250424131908_aassssssss.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131908_aassssssss.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131908_aassssssss.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131908_aassssssss.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131908_aassssssss.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T13:19:08.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20250424131305_mmmmmmmmmmmmm.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131305_mmmmmmmmmmmmm.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131305_mmmmmmmmmmmmm.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131305_mmmmmmmmmmmmm.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424131305_mmmmmmmmmmmmm.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T13:13:05.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20250424130625_LCN.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130625_LCN.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130625_LCN.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130625_LCN.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130625_LCN.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T13:06:26.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20250424130452_New.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130452_New.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130452_New.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130452_New.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424130452_New.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T13:04:52.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:57:06.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T12:55:55.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T12:55:37.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:55:15.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20250424125358_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125358_Test.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125358_Test.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125358_Test.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125358_Test.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:53:58.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250424125058_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125058_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125058_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125058_InitialCreate.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Migrations\\20250424125058_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:50:59.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SignInManager.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\SignInManager.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Models\\SignInManager.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\SignInManager.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Models\\SignInManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:50:20.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20250424124440_AHHHHHHHHHH.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424124440_AHHHHHHHHHH.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424124440_AHHHHHHHHHH.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424124440_AHHHHHHHHHH.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424124440_AHHHHHHHHHH.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:44:40.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20250424122716_TEST2.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122716_TEST2.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122716_TEST2.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122716_TEST2.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122716_TEST2.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:27:16.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20250424122322_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122322_Test.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122322_Test.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122322_Test.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424122322_Test.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:23:22.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T12:20:11.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:19:12.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20250424121742_TIMESTAMPS.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424121742_TIMESTAMPS.cs",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424121742_TIMESTAMPS.cs",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424121742_TIMESTAMPS.cs",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART12\\DULUXFINALPART12\\DULUXFINALPART10\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Data\\Migrations\\20250424121742_TIMESTAMPS.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T12:17:43.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Details.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Details.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Details.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Details.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAIBJwCoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T10:03:25.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Delete.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Delete.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T10:03:21.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T10:03:03.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Time.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T10:02:29.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T09:26:38.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Reports.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T15:59:26.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LCN.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\LCN.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Home\\LCN.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\LCN.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Home\\LCN.cshtml",
+              "ViewState": "AgIAALIAAAAAAAAAAAAUwMQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T13:25:19.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\Delete.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Delete.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T10:13:55.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Returns\\Edit.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T10:13:50.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Details.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\Details.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Details.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T09:53:04.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Index.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\Index.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Index.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\Index.cshtml",
+              "ViewState": "AgIAALQAAAAAAAAAAAAUwMMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T08:19:14.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Create.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Returns\\Create.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Returns\\Create.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Returns\\Create.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwGkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T08:15:13.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Return.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\Return.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Models\\Return.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\Return.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Models\\Return.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBQwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T08:07:56.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Edit.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Edit.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Edit.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAIBJwCgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T09:26:02.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T09:17:44.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Time.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\Views\\Scan_Image\\Time.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T09:16:34.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Speed.css",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\Speed.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T06:42:00.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Index.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Index.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Index.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Index.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAUwJUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:38:20.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Delete.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Delete.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T13:16:14.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Create.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Create.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Create.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Create.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwK4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:37:51.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Details.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Details.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Details.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T13:57:54.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "speedometer.png -  [English (United Kingdom)] - PNG [300x300, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\lib\\speedometer.png",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\lib\\speedometer.png",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\lib\\speedometer.png -  [English (United Kingdom)] - PNG [300x300, 32 bit, PNG]",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\lib\\speedometer.png -  [English (United Kingdom)] - PNG [300x300, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-02T06:48:36.581Z",
+              "EditorCaption": " -  [English (United Kingdom)] - PNG [300x300, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\css\\site.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-02T07:21:52.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T06:21:57.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowEMAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T06:21:50.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Note.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Note.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Scan_Image\\Note.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Scan_Image\\Note.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Scan_Image\\Note.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAUwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T14:27:56.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Scan_Image.js",
+              "DocumentMoniker": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\js\\Scan_Image.js",
+              "RelativeDocumentMoniker": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\js\\Scan_Image.js",
+              "ToolTip": "C:\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\js\\Scan_Image.js",
+              "RelativeToolTip": "..\\Users\\Kaiba\\Desktop\\DULUXFINALPART9\\DULUXFINALPART9\\DULUXFINALPART8\\DULUXFINALPART8\\DULUXFINALPART1\\wwwroot\\js\\Scan_Image.js",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-20T13:28:42.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Index.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Index.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Index.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Index.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAIBJwB4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:37:17.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Search.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Guards\\Search.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Guards\\Search.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Guards\\Search.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAwwCwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:17:25.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwCQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:14:02.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DULUXFINALPART1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T09:12:38.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Scan_Image.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\Scan_Image.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Models\\Scan_Image.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\Scan_Image.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Models\\Scan_Image.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:28:52.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GuardsPage.cs",
+              "DocumentMoniker": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\GuardsPage.cs",
+              "RelativeDocumentMoniker": "DULUXFINALPART1\\Models\\GuardsPage.cs",
+              "ToolTip": "C:\\DULUXFINALPART14 - working copy\\DULUXFINALPART1\\Models\\GuardsPage.cs",
+              "RelativeToolTip": "DULUXFINALPART1\\Models\\GuardsPage.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwEIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:18:21.933Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

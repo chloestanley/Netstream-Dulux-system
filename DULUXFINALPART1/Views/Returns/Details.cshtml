@@ -1,0 +1,58 @@
+﻿@model DULUXFINALPART1.Models.Return
+
+@{
+    ViewData["Title"] = "Return Details";
+}
+
+<div class="container mt-4">
+    <h1 class="display-5">📦 Return Details</h1>
+    <hr />
+
+    <!-- Return Details Section -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4>Return Information</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.DeliveryNumber)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.DeliveryNumber)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Comments)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Comments)
+                </dd>
+
+                <dt class="col-sm-3">
+                    Date
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.ReturnCreatedAt)
+                </dd>
+
+                <dt class="col-sm-3">
+                    Shipment Number
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.ScanImage.Shipment)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Actions Section -->
+    <div class="mt-4">
+
+        <a asp-action="Index" class="btn btn-outline-secondary btn-lg">Back to List</a>
+    </div>
+</div>
+
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>

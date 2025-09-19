@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Shipment Records";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg rounded-4">
+        <div class="card-body">
+            <h1 class="card-title display-6 mb-4">🚚 LCN Status Records</h1>
+
+            <!-- Filters -->
+            <div class="d-flex justify-content-between mb-4">
+                <div class="d-flex">
+                    <input type="text" id="searchInput" class="form-control me-2" placeholder="Search by Shipment" />
+                    <button class="btn btn-primary" id="searchButton">Search</button>
+                </div>
+                <div class="d-flex">
+                    <select id="monthFilter" class="form-select me-2">
+                        <option value="">Select Month</option>
+                        @for (int m = 1; m <= 12; m++)
+                        {
+                            <option value="@m.ToString("D2")">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(m)</option>
+                        }
+                    </select>
+                    <button class="btn btn-secondary" id="filterButton">Filter by Month</button>
+                </div>
+                <div class="d-flex">
+                    <select id="timeFilter" class="form-select me-2">
+                        <option value="">Select Time Range</option>
+                        <option value="under1">Under 1 Hour</option>
+                        <option value="1to2">1 to 2 Hours</option>
+                        <option value="over2">Over 2 Hours</option>
+                    </select>
+                    <button class="btn btn-info" id="timeFilterButton">Filter by Time</button>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div id="statusLegend" class="mb-4">
+                <h5 class="fw-bold">Legend:</h5>
+                <div class="d-flex flex-wrap gap-4">
+                    <div><span class="dot" style="background-color: blue;"></span> <strong>Busy</strong></div>
+                    <div><span class="dot" style="background-color: green;"></span> <strong>Under 1 Hour</strong></div>
+                    <div><span class="dot" style="background-color: orange;"></span> <strong>More than 1 Hour</strong></div>
+                    <div><span class="dot" style="background-color: red;"></span> <strong>More than 2 Hours</strong></div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered align-middle" id="shipmentTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Shipment</th>
+                            <th>Status</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            bool isTimeTaken = item.TimeTakenSeconds > 0;
+                            int elapsedTimeInSeconds = isTimeTaken ? item.TimeTakenSeconds ?? 0 : 0;
+
+                            string dotColor = "blue";
+                            string statusMessage = "Busy";
+
+                            if (isTimeTaken)
+                            {
+                                if (elapsedTimeInSeconds > 120)
+                                {
+                                    dotColor = "red";
+                                    statusMessage = "More than 2 Hours";
+                                }
+                                else if (elapsedTimeInSeconds > 60)
+                                {
+                                    dotColor = "orange";
+                                    statusMessage = "More than 1 Hour";
+                                }
+                                else
+                                {
+                                    dotColor = "green";
+                                    statusMessage = "Under 1 Hour";
+                                }
+                            }
+
+                            <tr class="shipmentRow" data-month="@item.CreatedAt.Month.ToString("D2")" data-time="@elapsedTimeInSeconds">
+                                <td>@item.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                <td class="fw-semibold">@item.Shipment</td>
+                                <td><span class="dot" style="background-color: @dotColor;" title="@elapsedTimeInSeconds seconds"></span></td>
+                                <td>@statusMessage</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                    <button class="btn btn-sm btn-outline-primary show-image-btn">Show Image</button>
+                                </td>
+                            </tr>
+                            <tr class="imageRow" style="display: none;">
+                                <td colspan="4" class="text-center">
+                                    @if (!string.IsNullOrEmpty(item.ImageUri))
+                                    {
+                                        <img src="@item.ImageUri" alt="Shipment Image" class="img-fluid rounded shadow my-2" style="max-height: 300px;" />
+                                    }
+                                    else if (!string.IsNullOrEmpty(item.GetImageBase64()))
+                                    {
+                                        <img src="@item.GetImageBase64()" alt="Shipment Image" class="img-fluid rounded shadow my-2" style="max-height: 300px;" />
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted">No image available</p>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dot {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    #statusLegend div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    tbody tr:hover {
+        background-color: #f5f5f5;
+        transition: background-color 0.3s ease;
+    }
+</style>
+
+<script>
+    function filterTable() {
+        let searchValue = document.getElementById('searchInput').value.toLowerCase();
+        let selectedMonth = document.getElementById('monthFilter').value;
+        let selectedTimeRange = document.getElementById('timeFilter').value;
+
+        document.querySelectorAll('.shipmentRow').forEach(row => {
+            let shipment = row.cells[1].innerText.toLowerCase();
+            let rowMonth = row.getAttribute('data-month');
+            let timeTaken = parseInt(row.getAttribute('data-time'));
+
+            let matchSearch = shipment.includes(searchValue);
+            let matchMonth = selectedMonth === '' || rowMonth === selectedMonth;
+            let matchTime =
+                selectedTimeRange === '' ||
+                (selectedTimeRange === 'under1' && timeTaken <= 60) ||
+                (selectedTimeRange === '1to2' && timeTaken > 60 && timeTaken <= 120) ||
+                (selectedTimeRange === 'over2' && timeTaken > 120);
+
+            let display = (matchSearch && matchMonth && matchTime);
+            row.style.display = display ? '' : 'none';
+
+            let buttonRow = row.nextElementSibling;
+            let imageRow = buttonRow?.nextElementSibling;
+
+            if (buttonRow && buttonRow.tagName === "TR") {
+                buttonRow.style.display = display ? '' : 'none';
+            }
+
+            if (imageRow && imageRow.classList.contains("imageRow")) {
+                imageRow.style.display = display && imageRow.dataset.visible === "true" ? '' : 'none';
+            }
+        });
+    }
+
+    document.getElementById('searchButton').addEventListener('click', filterTable);
+    document.getElementById('filterButton').addEventListener('click', filterTable);
+    document.getElementById('timeFilterButton').addEventListener('click', filterTable);
+
+    // Toggle image visibility
+    document.querySelectorAll('.show-image-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const buttonRow = btn.closest('tr');
+            const imageRow = buttonRow.nextElementSibling;
+
+            if (imageRow && imageRow.classList.contains('imageRow')) {
+                const currentlyVisible = imageRow.style.display === '';
+                imageRow.style.display = currentlyVisible ? 'none' : '';
+                imageRow.dataset.visible = !currentlyVisible;
+                btn.textContent = currentlyVisible ? 'Show Image' : 'Hide Image';
+            }
+        });
+    });
+</script>

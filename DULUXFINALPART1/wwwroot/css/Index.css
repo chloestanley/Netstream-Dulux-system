@@ -1,0 +1,43 @@
+
+  .hidden-row {
+            display: none;
+        }
+
+        .form-check-label {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .text-center h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .text-center p a {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .table-responsive {
+                overflow-x: auto;
+            }
+
+            .table td, .table th {
+                padding: 0.5rem;
+                font-size: 0.875rem;
+            }
+
+            .btn {
+                font-size: 0.875rem;
+                padding: 0.25rem 0.5rem;
+            }
+    .btn-confirm {
+        background-color: green;
+        color: white;
+        padding: 10px 20px; /* Increase padding */
+        font-size: 1.25rem; /* Increase font size */
+        width: auto; /* Adjust width as needed */
+    }
+
+
+}

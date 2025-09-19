@@ -1,0 +1,59 @@
+﻿@model DULUXFINALPART1.Models.Scan_Image
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Scan_Image</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ContentType" class="control-label"></label>
+                <input asp-for="ContentType" class="form-control" />
+                <span asp-validation-for="ContentType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageData" class="control-label"></label>
+                <input asp-for="ImageData" class="form-control" />
+                <span asp-validation-for="ImageData" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Extracted_Text" class="control-label"></label>
+                <input asp-for="Extracted_Text" class="form-control" />
+                <span asp-validation-for="Extracted_Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Shipment" class="control-label"></label>
+                <input asp-for="Shipment" class="form-control" />
+                <span asp-validation-for="Shipment" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsSelected" /> @Html.DisplayNameFor(model => model.IsSelected)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUri" class="control-label"></label>
+                <input asp-for="ImageUri" class="form-control" />
+                <span asp-validation-for="ImageUri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

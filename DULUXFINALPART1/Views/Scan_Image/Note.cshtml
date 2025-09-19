@@ -1,0 +1,156 @@
+﻿@model IEnumerable<DULUXFINALPART1.Models.Scan_Image>
+
+@{
+    ViewData["Title"] = "Notifications";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d6efd;
+            font-size: 40px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        .notification-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 6px solid #0d6efd;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+            .notification-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            }
+
+        .content h3 {
+            font-size: 22px;
+            color: #212529;
+            margin: 0 0 10px;
+        }
+
+        .content p {
+            color: #495057;
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+            .content p strong {
+                color: #343a40;
+            }
+
+        .btn-view {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #0d6efd;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-view:hover {
+                background-color: #0b5ed7;
+            }
+
+        .empty-message {
+            text-align: center;
+            font-size: 18px;
+            color: #6c757d;
+            padding: 40px;
+            background-color: #f1f3f5;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-bell"></i> Notifications</h1>
+
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="notification-card">
+                    <div class="content">
+                        <h3>@(string.IsNullOrEmpty(item.Shipment) ? "No Shipment" : item.Shipment)</h3>
+
+                        @if (!string.IsNullOrEmpty(item.DeliveryNo1))
+                        {
+                            <p><strong>Delivery No 1:</strong> @item.DeliveryNo1</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.DeliveryNo2))
+                        {
+                            <p><strong>Delivery No 2:</strong> @item.DeliveryNo2</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.DeliveryNo3))
+                        {
+                            <p><strong>Delivery No 3:</strong> @item.DeliveryNo3</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.DeliveryNo4))
+                        {
+                            <p><strong>Delivery No 4:</strong> @item.DeliveryNo4</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.DeliveryNo5))
+                        {
+                            <p><strong>Delivery No 5:</strong> @item.DeliveryNo5</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.TotalPC))
+                        {
+                            <p><strong>Total PC:</strong> @item.TotalPC</p>
+                        }
+                        @if (!string.IsNullOrEmpty(item.Carrier))
+                        {
+                            <p><strong>Carrier:</strong> @item.Carrier</p>
+                        }
+
+                        <a asp-controller="Guards" asp-action="Create" class="btn-view">
+                            <i class="fas fa-eye"></i> View Details
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="empty-message">
+                <p><i class="fas fa-info-circle"></i> No selected notifications to display.</p>
+            </div>
+        }
+    </div>
+
+    <script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+﻿@model DULUXFINALPART1.Models.Scan_Image
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 20px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #28a745;
+        }
+
+        h2 {
+            color: #28a745;
+        }
+
+        hr {
+            border-top: 2px solid #28a745;
+        }
+
+        .form-group img {
+            cursor: pointer;
+            border: 2px dashed #28a745;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, border 0.3s;
+        }
+
+            .form-group img:hover {
+                transform: scale(1.05);
+                border: 2px solid #218838;
+            }
+
+        .btn-success {
+            background: linear-gradient(45deg, #28a745, #1e7e34);
+            border: none;
+            transition: all 0.3s;
+        }
+
+            .btn-success:hover {
+                background: linear-gradient(45deg, #1e7e34, #155724);
+            }
+
+        .alert-danger {
+            border: 1px solid #dc3545;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            background-color: #f0f8f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+        }
+
+            .instructions ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            .instructions li {
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h2 class="mb-3"><i class="fas fa-camera"></i> Upload and Scan Image</h2>
+        <h5 class="text-muted">Click Image below to upload and analyze an image</h5>
+        <hr />
+
+        <!-- Instructions Section -->
+        <div class="instructions">
+            <h4>How to Use:</h4>
+            <ul>
+                <li><strong>Step 1:</strong> Click the "Capture Image" button to open your device’s camera.</li>
+                <li><strong>Step 2:</strong> Take a photo or select an image from your device.</li>
+                <li><strong>Step 3:</strong> Once the image is selected, it will be automatically displayed below, confirming the upload.</li>
+                <li><strong>Step 4:</strong> If you are satisfied with the image, click the <span class="text-success">Scan Image</span> button to process it.</li>
+                <li><strong>Step 5:</strong> The system will analyze the image and provide results (if applicable).</li>
+            </ul>
+            <p>If you encounter any issues, please make sure your device's camera is enabled and try again.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="form-group d-none">
+                        <label asp-for="ContentType" class="control-label"></label>
+                        <input asp-for="ContentType" type="hidden" class="form-control" />
+                        <span asp-validation-for="ContentType" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group text-center">
+                        <img src="/Camera.jpg" id="takePhotoButton" class="img-fluid p-3" alt="Capture Image" width="180" height="180" />
+                        <input type="file" name="imageFile" id="imageFileInput" class="form-control d-none" accept="image/*" capture="environment" />
+                        <span asp-validation-for="ImageData" class="text-danger"></span>
+                        <p id="confirmationMessage" class="text-success mt-2"></p>
+                        <p id="errorMessage" class="text-danger mt-2"></p>
+                    </div>
+
+                    <div class="form-group d-grid gap-2">
+                        <button type="submit" class="btn btn-success"><i class="fas fa-scan"></i> Scan Image</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    @section Scripts {
+        <script>
+            document.getElementById('takePhotoButton').addEventListener('click', function() {
+                document.getElementById('imageFileInput').click();
+            });
+
+            document.getElementById('imageFileInput').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    console.log("File selected: ", file.name);
+                    document.getElementById('confirmationMessage').textContent = "✅ Image captured successfully: " + file.name;
+                }
+            });
+
+            // Detect orientation change
+            window.addEventListener('orientationchange', function() {
+                const orientation = window.orientation;
+                if (orientation === 0 || orientation === 180) {
+                    document.body.style.backgroundColor = "#f8f9fa"; // Portrait
+                } else {
+                    document.body.style.backgroundColor = "#e9ecef"; // Landscape
+                }
+            });
+
+            // Initial check for orientation
+            if (window.orientation === 0 || window.orientation === 180) {
+                document.body.style.backgroundColor = "#f8f9fa";
+            } else {
+                document.body.style.backgroundColor = "#e9ecef";
+            }
+
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+            {
+                <text>
+                            document.getElementById('errorMessage').textContent = "@ViewBag.ErrorMessage";
+                </text>
+            }
+        </script>
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

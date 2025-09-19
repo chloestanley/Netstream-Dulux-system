@@ -1,0 +1,76 @@
+﻿@model DULUXFINALPART1.Models.GuardsPage
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>GuardsPage</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GuardsId" />
+            <div class="form-group">
+                <label asp-for="Guard_Name" class="control-label"></label>
+                <input asp-for="Guard_Name" class="form-control" />
+                <span asp-validation-for="Guard_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guard_SecurityCard_No" class="control-label"></label>
+                <input asp-for="Guard_SecurityCard_No" class="form-control" />
+                <span asp-validation-for="Guard_SecurityCard_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Driver_Name" class="control-label"></label>
+                <input asp-for="Driver_Name" class="form-control" />
+                <span asp-validation-for="Driver_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Driver_SecurityCard_No" class="control-label"></label>
+                <input asp-for="Driver_SecurityCard_No" class="form-control" />
+                <span asp-validation-for="Driver_SecurityCard_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateTime" class="control-label"></label>
+                <input asp-for="DateTime" class="form-control" />
+                <span asp-validation-for="DateTime" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="ExtractedText" class="control-label"></label>
+                <input asp-for="ExtractedText" class="form-control" />
+                <span asp-validation-for="ExtractedText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Signature" class="control-label"></label>
+                <input asp-for="Signature" class="form-control" />
+                <span asp-validation-for="Signature" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acceptance" class="control-label"></label>
+                <select asp-for="Acceptance" class="form-control"></select>
+                <span asp-validation-for="Acceptance" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="SendToControlRoom" /> @Html.DisplayNameFor(model => model.SendToControlRoom)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>

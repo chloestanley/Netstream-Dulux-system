@@ -1,0 +1,84 @@
+﻿@model List<DULUXFINALPART1.Models.Scan_Image>
+
+@{
+    ViewData["Title"] = "Shipment Records with Time Spent";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg rounded-4">
+        <div class="card-body">
+            <h1 class="card-title display-6 mb-4">🚚 Shipment Records</h1>
+
+            <!-- Styled legend section -->
+            <div id="statusLegend" class="mb-4">
+                <h5 class="fw-bold">Legend:</h5>
+                <div class="d-flex flex-wrap gap-3">
+                    <div><span class="dot" style="background-color: blue;"></span> <strong>Busy</strong></div>
+                    <div><span class="dot" style="background-color: green;"></span> <strong>Done</strong></div>
+                    <div><span class="dot" style="background-color: orange;"></span> <strong>Long</strong></div>
+                    <div><span class="dot" style="background-color: red;"></span> <strong>Very Long</strong></div>
+                </div>
+            </div>
+
+            <table class="table table-hover table-bordered align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Shipment</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        bool isTimeTaken = item.TimeTakenSeconds > 0;
+                        int elapsedTimeInSeconds = isTimeTaken ? item.TimeTakenSeconds.Value : 0;
+
+                        string dotColor = "blue"; // Default
+
+                        if (isTimeTaken)
+                        {
+                            if (elapsedTimeInSeconds > 120)
+                                dotColor = "red";
+                            else if (elapsedTimeInSeconds > 60)
+                                dotColor = "orange";
+                            else if (elapsedTimeInSeconds < 60)
+                                dotColor = "green";
+                        }
+
+                        <tr data-dot-color="@dotColor">
+                            <td>@item.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td class="fw-semibold">@item.Shipment</td>
+                            <td>
+                                <span class="dot" style="background-color: @dotColor;" title="@elapsedTimeInSeconds seconds"></span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dot {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    #statusLegend div {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    tbody tr:hover {
+        background-color: #f5f5f5;
+        transition: background-color 0.3s ease;
+    }
+</style>
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>

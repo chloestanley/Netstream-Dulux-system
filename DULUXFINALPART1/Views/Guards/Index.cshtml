@@ -1,0 +1,140 @@
+﻿@model IEnumerable<DULUXFINALPART1.Models.GuardsPage>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/css/guardpage.css" />
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Guards List</h1>
+
+    <div class="text-center mb-3">
+        <a asp-action="Create" class="btn btn-lg btn-success">Create New</a>
+    </div>
+
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table class="table table-striped table-hover align-middle">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Guard_Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Guard_SecurityCard_No)</th>
+                    <th>@Html.DisplayNameFor(model => model.Driver_Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Driver_SecurityCard_No)</th>
+                    <th>@Html.DisplayNameFor(model => model.DateTime)</th>
+                    <th>Images</th>
+                    <th>Shipment</th>
+                    <th>@Html.DisplayNameFor(model => model.Acceptance)</th>
+                    <th>@Html.DisplayNameFor(model => model.SendToControlRoom)</th>
+                    <th>Status</th>
+                    <th>Vehicle License</th>
+                    <th>Trailer License</th>
+                    <th>Signature</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Guard_Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Guard_SecurityCard_No)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Driver_Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Driver_SecurityCard_No)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DateTime)</td>
+
+                        <td>
+                            <div class="d-flex flex-wrap gap-2">
+                                @if (!string.IsNullOrEmpty(item.ImageUrl1))
+                                {
+                                    <img src="@item.ImageUrl1" class="img-thumbnail" style="max-width: 100px;" />
+                                }
+                                @if (!string.IsNullOrEmpty(item.ImageUrl2))
+                                {
+                                    <img src="@item.ImageUrl2" class="img-thumbnail" style="max-width: 100px;" />
+                                }
+                                @if (!string.IsNullOrEmpty(item.ImageUrl3))
+                                {
+                                    <img src="@item.ImageUrl3" class="img-thumbnail" style="max-width: 100px;" />
+                                }
+                                @if (!string.IsNullOrEmpty(item.ImageUrl4))
+                                {
+                                    <img src="@item.ImageUrl4" class="img-thumbnail" style="max-width: 100px;" />
+                                }
+                            </div>
+                        </td>
+
+                        <td>
+                            @if (item.ScanImage != null)
+                            {
+                                @item.ScanImage.Shipment
+                            }
+                            else
+                            {
+                                <span class="text-muted">N/A</span>
+                            }
+                        </td>
+
+                        <td>@Html.DisplayFor(modelItem => item.Acceptance)</td>
+
+                        <td>
+                            @if (item.SendToControlRoom)
+                            {
+                                <span class="badge bg-success">✔ Sent</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">✘ Not Sent</span>
+                            }
+                        </td>
+
+                        <td>
+                            @if (item.IsConfirmed)
+                            {
+                                <span class="badge bg-primary">Confirmed</span>
+                            }
+                            else if (item.IsRejected)
+                            {
+                                <span class="badge bg-danger">Rejected</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Pending</span>
+                            }
+                        </td>
+
+                        <td>
+                            <strong>Plate:</strong> @item.VehiclePlateNumber <br />
+                            <strong>Type:</strong> @item.VehicleType <br />
+                            <strong>Make:</strong> @item.VehicleMake <br />
+                            <strong>Color:</strong> @item.VehicleColor <br />
+                            <strong>VIN:</strong> @item.VehicleVin <br />
+                            <strong>Expiry:</strong> @item.VehicleExpiryDate
+                        </td>
+
+                        <td>
+                            <strong>Plate:</strong> @item.TrailerPlateNumber <br />
+                            <strong>Type:</strong> @item.TrailerType <br />
+                            <strong>Make:</strong> @item.TrailerMake <br />
+                            <strong>Color:</strong> @item.TrailerColor <br />
+                            <strong>VIN:</strong> @item.TrailerVin <br />
+                            <strong>Expiry:</strong> @item.TrailerExpiryDate
+                        </td>
+
+                        <td>
+                            @if (!string.IsNullOrEmpty(item.Signature))
+                            {
+                                <img src="@item.Signature" alt="Signature" style="max-width: 100px;" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No Signature</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>

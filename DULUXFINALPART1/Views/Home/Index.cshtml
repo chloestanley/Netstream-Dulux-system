@@ -1,0 +1,359 @@
+﻿@{
+    ViewData["Title"] = "Dulux Paint - Home";
+    var sessionStartTime = DateTime.Now;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <style>
+        body {
+            background-image: url('/lib/Can-You-Paint-Over-Wallpaper-1331852257-066f01b6626c4b35bbc2cd68d7c30183.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', sans-serif;
+            color: #003f5c;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .kpi-card {
+            background: linear-gradient(to right, dodgerblue, #00b4d8);
+            padding: 20px;
+            color: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+            .kpi-card.gauge {
+                background: linear-gradient(to right, dodgerblue, #0096c7);
+            }
+
+            .kpi-card h5 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+        .kpi-number {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .chart-box {
+            background: #e0f7ff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+        }
+
+        canvas {
+            background: #e0f7ff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+        }
+
+        .btn-toggle {
+            background-color: #00b4d8;
+            border: none;
+            padding: 8px 14px;
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+            .btn-toggle:hover {
+                background-color: #0077b6;
+            }
+
+        h2.text-center {
+            color: #003f5c;
+        }
+
+        .image-box {
+            background: #fff;
+            padding: 10px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .image-box img {
+                max-width: 100%;
+                border-radius: 12px;
+            }
+
+            .image-box h4 {
+                margin-top: 10px;
+                color: #003f5c;
+            }
+
+        /* New: Top-right image */
+        .top-right-image {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 90px;
+            height: 60px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top-right image -->
+    <img src="/lib/dulux_images.png" alt="Top Right Logo" class="top-right-image" />
+
+    <section style="background-color: rgba(255, 254, 246, 0.4); padding: 2px 0;">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" style="color: #0077b6;">📊 OPERATIONS OVERVIEW</h2>
+            <div class="kpi-grid mb-5">
+                <div class="kpi-card"><h5>Avg. LCNS Per Day</h5><p class="kpi-number" id="kpi-avg-day">--</p></div>
+                <div class="kpi-card"><h5>Latest Capture Time</h5><p class="kpi-number" id="kpi-latest-time">--</p></div>
+                <div class="kpi-card"><h5>⏱️ Since Last Capture</h5><p class="kpi-number" id="kpi-duration-since">--</p></div>
+                <div class="kpi-card gauge"><h5>Peak LCNS in Day</h5><p class="kpi-number" id="kpi-max-lcns">--</p></div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="chart-box">
+                    <h4 class="text-center mb-3">📅 LCNS Per Day</h4>
+                    <div class="chart-toggle text-center mb-2">
+                        <button onclick="toggleChartType('lcnsPerDayChart')" class="btn-toggle">Bar/Line</button>
+                    </div>
+                    <canvas id="lcnsPerDayChart" height="340"></canvas>
+                </div>
+
+                <div class="chart-box">
+                    <h4 class="text-center mb-3">📈 LCNS Per Month (Pie)</h4>
+                    <div class="chart-toggle text-center mb-2">
+                        <button onclick="togglePieDonut('lcnsPerMonthPieChart')" class="btn-toggle">Pie/Donut</button>
+                    </div>
+                    <canvas id="lcnsPerMonthPieChart" height="180"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h4 class="text-center mb-3">⚡ LCNS Gauge for day </h4>
+                    <canvas id="gaugeChart" height="180"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h4 class="text-center mb-3">📊 Total Captures Gauge for month</h4>
+                    <canvas id="gaugeChart2" height="180"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h4 class="text-center mb-3">🔵 LCNS Frequency (Hour vs. Day)</h4>
+                    <canvas id="bubbleChart" height="900" width="800"></canvas>
+                </div>
+                <div class="image-box">
+                    <img src="/lib/dulux_images.png" alt="Dulux Paint Sample" />
+                    <h4 class="text-center"></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lcnsPerDayLabels = @Html.Raw(ViewBag.LCNSPerDayLabels);
+            const lcnsPerDayValues = @Html.Raw(ViewBag.LCNSPerDayValues);
+            const lcnsPerMonthLabels = @Html.Raw(ViewBag.LCNSPerMonthLabels);
+            const lcnsPerMonthValues = @Html.Raw(ViewBag.LCNSPerMonthValues);
+            const lastLCNTimeValues = @Html.Raw(ViewBag.LastLCNTimeValues);
+            const bubbleData = @Html.Raw(ViewBag.BubbleChartData);
+
+            const commonOptions = {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { backgroundColor: '#3b3b3b', titleColor: '#fff', bodyColor: '#fff', borderColor: '#777', borderWidth: 1 }
+                },
+                scales: { y: { beginAtZero: true }, x: { beginAtZero: true } }
+            };
+
+            let charts = {};
+
+            function createChart(chartId, type, labels, data, bgColor, isPie = false) {
+                if (charts[chartId]) charts[chartId].destroy();
+                charts[chartId] = new Chart(document.getElementById(chartId), {
+                    type: type,
+                    data: { labels: labels, datasets: [{ data: data, backgroundColor: bgColor }] },
+                    options: isPie ? { plugins: { datalabels: { color: '#000', font: { weight: 'bold' }, formatter: v => v } } } : commonOptions,
+                    plugins: [ChartDataLabels]
+                });
+            }
+            createChart('lcnsPerDayChart', 'bar', lcnsPerDayLabels, lcnsPerDayValues, ['#ff6f61']);
+            createChart('lcnsPerDayPieChart', 'pie', lcnsPerDayLabels, lcnsPerDayValues, ['#ff6f61', '#fcd12a', '#8e44ad', '#00c2cb', '#f67280', '#ffa502'], true);
+            createChart('lcnsPerMonthPieChart', 'pie', lcnsPerMonthLabels, lcnsPerMonthValues, ['#1e90ff', '#ff6f61', '#00c2cb', '#fcd12a', '#8e44ad'], true);
+
+            window.togglePieDonut = function (chartId) {
+                const chart = charts[chartId];
+                const newType = chart.config.type === 'pie' ? 'doughnut' : 'pie';
+                createChart(chartId, newType, chart.data.labels, chart.data.datasets[0].data, chart.data.datasets[0].backgroundColor, true);
+            };
+
+            window.toggleChartType = function (chartId) {
+                const currentType = charts[chartId].config.type;
+                const newType = currentType === 'bar' ? 'line' : 'bar';
+                const chartData = charts[chartId].data;
+                const bgColor = [chartData.datasets[0].backgroundColor];
+                createChart(chartId, newType, chartData.labels, chartData.datasets[0].data, bgColor);
+            };
+
+            const avgDay = lcnsPerDayValues.length > 0 ? (lcnsPerDayValues.reduce((a, b) => a + b, 0) / lcnsPerDayValues.length).toFixed(2) : '0';
+            const latestTime = lastLCNTimeValues.length > 0 ? lastLCNTimeValues[lastLCNTimeValues.length - 1] : '--';
+            const peakLCNS = lcnsPerDayValues.length > 0 ? Math.max(...lcnsPerDayValues) : 0;
+
+            document.getElementById("kpi-avg-day").innerText = avgDay;
+            document.getElementById("kpi-latest-time").innerText = latestTime;
+            document.getElementById("kpi-max-lcns").innerText = peakLCNS;
+
+            function updateDurationSinceCapture() {
+                if (!latestTime || latestTime === "--") {
+                    document.getElementById("kpi-duration-since").innerText = '--';
+                    return;
+                }
+                const [hours, minutes] = latestTime.split(':').map(Number);
+                const now = new Date();
+                const captureTime = new Date(now);
+                captureTime.setHours(hours, minutes, 0);
+                let diff = now - captureTime;
+                if (diff < 0) diff += 86400000;
+                const totalMinutes = Math.floor(diff / 60000);
+                const hrs = Math.floor(totalMinutes / 60);
+                const mins = totalMinutes % 60;
+                document.getElementById("kpi-duration-since").innerText = hrs > 0 ? `${hrs}h ${mins}m ago` : `${mins}m ago`;
+            }
+
+            updateDurationSinceCapture();
+            setInterval(updateDurationSinceCapture, 60000);
+
+            new Chart(document.getElementById('bubbleChart'), {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'LCNS Activity',
+                        data: bubbleData.map(item => ({
+                            x: item.x,
+                            y: item.y,
+                            r: item.r * 10
+                        })),
+                        backgroundColor: '#0077b6',
+                        borderColor: '#0077b6',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            position: 'bottom',
+                            title: { display: true, text: 'Hour of Day', color: '#3b3b3b' },
+                            min: 0,
+                            max: 23,
+                            ticks: { color: '#3b3b3b', stepSize: 1 },
+                            grid: { color: 'rgba(0, 0, 0, 0.05)' }
+                        },
+                        y: {
+                            title: { display: true, text: 'Day of Week (0=Sun)', color: '#3b3b3b' },
+                            min: 0,
+                            max: 6,
+                            ticks: { color: '#3b3b3b', stepSize: 1 },
+                            grid: { color: 'rgba(0, 0, 0, 0.05)' }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return `Hour: ${context.raw.x}, Day: ${context.raw.y}, Count: ${context.raw.r / 2}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            function createGauge(id, finalValue, maxValue) {
+                let currentValue = 0;
+                const step = Math.max(1, Math.ceil(finalValue / 30));
+                const ctx = document.getElementById(id).getContext('2d');
+
+                const gauge = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        datasets: [{
+                            data: [0, maxValue],
+                            backgroundColor: ['#ff4d4d', '#ffffff'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        circumference: 180,
+                        rotation: 270,
+                        cutout: '70%',
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: { enabled: false },
+                            datalabels: {
+                                display: true,
+                                formatter: (value, ctx) => ctx.dataIndex === 0 ? Math.round(currentValue) : '',
+                                color: '#ffffff',
+                                font: { size: 28, weight: 'bold' },
+                                anchor: 'center',
+                                align: 'center'
+                            }
+                        },
+                        animation: {
+                            animateRotate: true,
+                            animateScale: false,
+                            duration: 1000,
+                            easing: 'easeOutBounce'
+                        }
+                    },
+                    plugins: [ChartDataLabels]
+                });
+
+                function animateGauge() {
+                    if (currentValue < finalValue) {
+                        currentValue += step;
+                        if (currentValue > finalValue) currentValue = finalValue;
+                        gauge.data.datasets[0].data[0] = currentValue;
+                        gauge.data.datasets[0].data[1] = maxValue - currentValue;
+                        gauge.update();
+                        requestAnimationFrame(animateGauge);
+                    }
+                }
+
+                requestAnimationFrame(animateGauge);
+            }
+
+            createGauge('gaugeChart', peakLCNS, 5);
+            createGauge('gaugeChart2', lcnsPerDayValues.reduce((a, b) => a + b, 0), 50);
+        });
+    </script>
+
+    <script src="//code.tidio.co/v8dfrv3g8zyut523k8cet5pkjr6tqmtj.js" async></script>
+</body>
+</html>

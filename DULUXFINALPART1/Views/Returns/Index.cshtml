@@ -1,0 +1,195 @@
+﻿@model IEnumerable<DULUXFINALPART1.Models.Return>
+
+@{
+    ViewData["Title"] = "Returns";
+    var totalShipments = Model.Count(); // Calculate the total number of returns
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="display-5">📦 Returns</h1>
+        <a asp-action="Create" class="btn btn-success btn-lg shadow-sm">
+            ➕ Add New Return
+        </a>
+    </div>
+
+    <!-- Total Shipments, Search Bar, and Month Filter Section -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="alert alert-info mb-0">
+                <strong>Total Returns:</strong> @totalShipments
+            </div>
+        </div>
+        <div class="col-md-6 text-end">
+            <!-- Search Bar -->
+            <input type="text" id="searchBox" class="form-control mb-2" placeholder="Search by Shipment or Delivery Number" onkeyup="searchShipment()" />
+
+            <!-- Month Filter -->
+            <select id="monthFilter" class="form-control" onchange="filterByMonth()">
+                <option value="">Select Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Instructions Section -->
+    <div class="alert alert-info mb-4">
+        <h5 class="fw-bold">Instructions:</h5>
+        <ul>
+            <li>This page displays all the returns submitted. You can search, filter, view Shipments and Delivery.</li>
+            <li>Use the search bar to filter returns by shipment number. The results will be filtered as you type.</li>
+            <li>Select a month from the "Filter by Month" dropdown to view returns from a specific month. All returns for that month will be displayed.</li>
+            <li>Click the "Sort by Date" button to sort the returns by their date in ascending or descending order.</li>
+            <li>Click "Add New Return" to create a new return entry.</li>
+            <li>To view  details of a return, click the corresponding "Details" button.</li>
+
+        </ul>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered rounded shadow-sm" id="returnsTable">
+            <thead class="table-dark">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ScanImage.Shipment)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().DeliveryNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Comments)
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="sortByDate()">Sort by Date</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                        <tr>
+                            <td>
+                            @Html.DisplayFor(modelItem => item.ScanImage.Shipment)
+                            </td>
+                            <td>
+                            @Html.DisplayFor(modelItem => item.DeliveryNumber)
+                            </td>
+                            <td>
+                            @Html.DisplayFor(modelItem => item.Comments)
+                            </td>
+                            <td>
+                            @Html.DisplayFor(modelItem => item.ReturnCreatedAt)
+                            </td>
+                            <td>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm me-1">Details</a>
+                            </td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>
+
+<script>
+    // Search function to filter by Shipment
+    function searchShipment() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchBox");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("returnsTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0]; // Search in the first column (Shipment)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    // Sort function to sort by Date
+    function sortByDate() {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("returnsTable");
+        switching = true;
+        dir = "asc"; // Set the sorting direction to ascending
+
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[3]; // The Date column (index 3)
+                y = rows[i + 1].getElementsByTagName("TD")[3];
+
+                if (dir == "asc") {
+                    if (new Date(x.innerHTML) > new Date(y.innerHTML)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (new Date(x.innerHTML) < new Date(y.innerHTML)) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchcount++;
+            } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+    // Filter function to filter by selected Month
+    function filterByMonth() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("monthFilter");
+        filter = input.value;
+        table = document.getElementById("returnsTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[3]; // Date column (index 3)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                var month = new Date(txtValue).getMonth() + 1; // Get the month (1-12)
+
+                if (month == filter || filter == "") {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

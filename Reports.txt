@@ -1,0 +1,90 @@
+@model List<DULUXFINALPART1.Models.Scan_Image>
+
+@{
+    ViewData["Title"] = "Reports";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary"><i class="bi bi-file-earmark-bar-graph-fill"></i> Reports</h2>
+    </div>
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger shadow-sm">@ViewBag.ErrorMessage</div>
+    }
+
+    <!-- 🌟 Search and Filter -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <form method="get" asp-action="Reports" class="row g-2">
+                <div class="col-md-6">
+                    <input type="text" name="searchTerm" class="form-control" placeholder="🔍 Search by Shipment or Text"
+                           value="@Context.Request.Query["searchTerm"]" />
+                </div>
+
+                <div class="col-md-4">
+                    <select name="month" class="form-select">
+                        <option value="">📅 All Months</option>
+                        @for (int i = 1; i <= 12; i++)
+                        {
+                            var monthName = System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i);
+                            <option value="@i" selected="@(Context.Request.Query["month"] == i.ToString() ? "selected" : null)">
+                                @monthName
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Filter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 🌟 Report Table -->
+    <div class="table-responsive shadow-sm">
+        <table class="table table-hover table-bordered align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>LCN</th>
+                    <th>Information</th>
+                    <th>Shipment No</th>
+                    <th>Time Taken</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center fw-bold">@item.Id</td>
+                            <td class="text-center">
+                                @if (!string.IsNullOrEmpty(item.ImageUri))
+                                {
+                                    <img src="@item.ImageUri" alt="Image @item.Id" class="img-thumbnail" width="100" />
+                                }
+                            </td>
+                            <td style="max-width: 300px; white-space: pre-wrap;">@item.Extracted_Text</td>
+                            <td class="text-center">@item.Shipment</td>
+                            <td class="text-center">@item.TimeTakenSeconds</td>
+                            <td class="text-center text-muted">@item.CreatedAt.ToString("f")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted py-3">No data available for this search.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="//code.tidio.co/daq8vctxa39sfedllqglgoc1fzfoapgx.js" async></script>

@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Quick Links - Reports";
+}
+
+<!-- Custom Styles -->
+<style>
+    .report-section {
+        padding: 50px 20px;
+        background: linear-gradient(to right, #e3f2fd, #ffffff);
+        min-height: 100vh;
+    }
+
+    .report-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #0d6efd;
+        margin-bottom: 40px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card-body p {
+        font-size: 15px;
+        color: #495057;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 8px;
+    }
+
+    .icon-lg {
+        font-size: 22px;
+    }
+</style>
+
+<div class="container report-section">
+    <h2 class="text-center report-title"><i class="fas fa-chart-bar me-2"></i>Reports Dashboard</h2>
+
+    <div class="row g-4">
+        <!-- LCN Report -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <i class="fas fa-file-alt icon-lg"></i> LCN Report Print
+                </div>
+                <div class="card-body">
+                    <p>Access detailed LCN report print data. Download the dataset in CSV for records or analytics.</p>
+                    <a asp-controller="Scan_Image" asp-action="LCNReportPrint" class="btn btn-info w-100">
+                        <i class="fas fa-eye me-2"></i> View LCN Report Print
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employees Report -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <i class="fas fa-users icon-lg"></i> Employees Report
+                </div>
+                <div class="card-body">
+                    <p>Generate and explore reports of all registered employees, their details, and role distributions.</p>
+                    <a asp-controller="Admin" asp-action="Index" class="btn btn-success w-100">
+                        <i class="fas fa-eye me-2"></i> View Employees Report
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Returns Report -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-white">
+                    <i class="fas fa-box icon-lg"></i> Returns Report
+                </div>
+                <div class="card-body">
+                    <p>Detailed breakdown of return data for shipments and inventory—analyze trends and anomalies.</p>
+                    <a asp-controller="Returns" asp-action="ReturnsReport" class="btn btn-warning text-white w-100">
+                        <i class="fas fa-eye me-2"></i> View Returns Report
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guards Report -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-user-shield icon-lg"></i> Guards Report
+                </div>
+                <div class="card-body">
+                    <p>Access reports detailing guard assignments, card numbers, and acceptance status across shifts.</p>
+                    <a asp-controller="Guards" asp-action="GuardReports" class="btn btn-primary w-100">
+                        <i class="fas fa-eye me-2"></i> View Guards Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
