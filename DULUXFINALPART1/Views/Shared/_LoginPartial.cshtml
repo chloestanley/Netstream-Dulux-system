@@ -5,12 +5,15 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <ul style="padding-left: 0;">
-        <li>
-            <a asp-area="Identity" asp-page="/Account/Manage/Index">
+        @if (User.IsInRole("Admin") || User.IsInRole("ControlRoom"))
+        {
+            <li>
+                <a asp-area="Identity" asp-page="/Account/Manage/Index">
                 <i class="fas fa-user"></i>
                 <span class="link-text">Hello</span>
             </a>
         </li>
+        }
         @if (User.IsInRole("Admin"))
         {
             <li>

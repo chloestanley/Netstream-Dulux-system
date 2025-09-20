@@ -9,17 +9,25 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DULUXFINALPART1.Controllers
 {
+    [Authorize(Roles = "Admin,ControlRoom")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
+
+
+        ////public class HomeController : Controller
+        ////{
+        ////    private readonly ILogger<HomeController> _logger;
+        ////    private readonly ApplicationDbContext _context;
 
         public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
         }
-        
+
+     
         public IActionResult Index()
         {
             var now = DateTime.Now;
@@ -90,10 +98,7 @@ namespace DULUXFINALPART1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -103,6 +108,8 @@ namespace DULUXFINALPART1.Controllers
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             });
         }
+
+
         
         public IActionResult LCN()
         {

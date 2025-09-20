@@ -86,7 +86,28 @@ public class LoginModel : PageModel
                 await _userManager.UpdateAsync(user);
 
                 _logger.LogInformation("User logged in.");
-                return LocalRedirect(returnUrl);
+
+                // Redirect based on role
+                if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "ControlRoom"))
+                {
+                    return LocalRedirect("~/Home/Index");
+                }
+                else if (await _userManager.IsInRoleAsync(user, "ScanOperator"))
+                {
+                    return LocalRedirect("~/Scan_Image/Create");
+
+                }
+                else if (await _userManager.IsInRoleAsync(user, "Guard"))
+                {
+                    return LocalRedirect("~/Scan_Image/Note");
+
+                }
+                else
+                {
+                    // fallback if role not recognized
+                    return LocalRedirect("~/");
+                }
+
             }
             if (result.RequiresTwoFactor)
             {
