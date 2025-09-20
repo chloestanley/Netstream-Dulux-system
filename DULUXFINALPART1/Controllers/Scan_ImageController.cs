@@ -146,11 +146,13 @@ public class Scan_ImageController : Controller
 
             // Extract delivery numbers
             var matches = Regex.Matches(extractedText, @"\b\d{10}\b");
-            if (matches.Count >= 1) scan_Image.DeliveryNo1 = matches[0].Value;
-            if (matches.Count >= 2) scan_Image.DeliveryNo2 = matches[1].Value;
-            if (matches.Count >= 3) scan_Image.DeliveryNo3 = matches[2].Value;
-            if (matches.Count >= 4) scan_Image.DeliveryNo4 = matches[3].Value;
-            if (matches.Count >= 5) scan_Image.DeliveryNo5 = matches[4].Value;
+            // Store up to 25 delivery numbers
+            for (int i = 0; i < Math.Min(matches.Count, 25); i++)
+            {
+                typeof(Scan_Image)
+                    .GetProperty($"DeliveryNo{i + 1}")
+                    ?.SetValue(scan_Image, matches[i].Value);
+            }
 
             // Extract totals
             var linesArray = extractedText.Split('\n');

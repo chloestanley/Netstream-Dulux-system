@@ -19,13 +19,31 @@ namespace DULUXFINALPART1.Models
         public int? TimeTakenSeconds { get; set; }
 
         public string? DeliveryNo1 { get; set; }
-
         public string? DeliveryNo2 { get; set; }
         public string? DeliveryNo3 { get; set; }
-
         public string? DeliveryNo4 { get; set; }
-
         public string? DeliveryNo5 { get; set; }
+        public string? DeliveryNo6 { get; set; }
+        public string? DeliveryNo7 { get; set; }
+        public string? DeliveryNo8 { get; set; }
+        public string? DeliveryNo9 { get; set; }
+        public string? DeliveryNo10 { get; set; }
+        public string? DeliveryNo11 { get; set; }
+        public string? DeliveryNo12 { get; set; }
+        public string? DeliveryNo13 { get; set; }
+        public string? DeliveryNo14 { get; set; }
+        public string? DeliveryNo15 { get; set; }
+        public string? DeliveryNo16 { get; set; }
+        public string? DeliveryNo17 { get; set; }
+        public string? DeliveryNo18 { get; set; }
+        public string? DeliveryNo19 { get; set; }
+        public string? DeliveryNo20 { get; set; }
+        public string? DeliveryNo21 { get; set; }
+        public string? DeliveryNo22 { get; set; }
+        public string? DeliveryNo23 { get; set; }
+        public string? DeliveryNo24 { get; set; }
+        public string? DeliveryNo25 { get; set; }
+
 
         public string? TotalPC { get; set; }
         public string? TotalVolume { get; set; }

@@ -35,17 +35,8 @@ public class GuardsController : Controller
         return View(await guards.ToListAsync());
     }
 
-    //[HttpGet]
-    //public IActionResult Create()
-    //{
-    //    var highestIdRecord = _context.Scan_Images
-    //        .OrderByDescending(s => s.Id)
-    //        .FirstOrDefault();
-
-    //    ViewBag.Shipments = new SelectList(new[] { highestIdRecord }, "Id", "Shipment");
-    //    return View();
-    //}
     [HttpGet]
+   
     public IActionResult Create()
     {
         // Fetch all Scan_Images from the database
@@ -61,6 +52,8 @@ public class GuardsController : Controller
 
 
     // GET: Guards/Create
+
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(GuardsPage guardsPage, List<IFormFile> imageFiles)
