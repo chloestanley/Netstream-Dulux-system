@@ -35,68 +35,93 @@ public class GuardsController : Controller
         return View(await guards.ToListAsync());
     }
 
+    //[HttpGet]
+    //public IActionResult Create()
+    //{
+    //    var highestIdRecord = _context.Scan_Images
+    //        .OrderByDescending(s => s.Id)
+    //        .FirstOrDefault();
+
+    //    ViewBag.Shipments = new SelectList(new[] { highestIdRecord }, "Id", "Shipment");
+    //    return View();
+    //}
     [HttpGet]
     public IActionResult Create()
     {
-        var highestIdRecord = _context.Scan_Images
-            .OrderByDescending(s => s.Id)
-            .FirstOrDefault();
+        // Fetch all Scan_Images from the database
+        var shipments = _context.Scan_Images
+            .OrderByDescending(s => s.Id) // Optional: newest first
+            .ToList();
 
-        ViewBag.Shipments = new SelectList(new[] { highestIdRecord }, "Id", "Shipment");
+        // Populate the dropdown with ALL shipments
+        ViewBag.Shipments = new SelectList(shipments, "Id", "Shipment");
+
         return View();
     }
 
+
     // GET: Guards/Create
-
-
     [HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Create(GuardsPage guardsPage, List<IFormFile> imageFiles)
-{
-    if (!ModelState.IsValid)
-        return View(guardsPage);
-
-    try
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(GuardsPage guardsPage, List<IFormFile> imageFiles)
     {
-        // Initial save to get GuardsId
-        _context.Add(guardsPage);
-        await _context.SaveChangesAsync();
-
-        // DEBUG: Log the signature (optional)
-        Console.WriteLine("Signature received: " + guardsPage.Signature);
-
-        var containerName = _configuration["AzureBlobStorage:ContainerName"];
-        var connectionString = _configuration.GetConnectionString("BlobStorageConnection");
-
-        for (int i = 0; i < imageFiles.Count && i < 4; i++)
+        if (!ModelState.IsValid)
         {
-            var file = imageFiles[i];
-            if (file != null && file.Length > 0)
-            {
-                string blobName = $"guards/{guardsPage.GuardsId}_image{i + 1}.png";
-                var imageUrl = await UploadToBlobAsync(file, blobName, connectionString, containerName);
+            // Repopulate dropdown
+            var shipments = _context.Scan_Images
+                .OrderByDescending(s => s.Id)
+                .ToList();
+            ViewBag.Shipments = new SelectList(shipments, "Id", "Shipment", guardsPage.ScanImageId);
 
-                switch (i)
-                {
-                    case 0: guardsPage.ImageUrl1 = imageUrl; break;
-                    case 1: guardsPage.ImageUrl2 = imageUrl; break;
-                    case 2: guardsPage.ImageUrl3 = imageUrl; break;
-                    case 3: guardsPage.ImageUrl4 = imageUrl; break;
-                }
-            }
+            return View(guardsPage);
         }
 
-        _context.Update(guardsPage);
-        await _context.SaveChangesAsync();
-    }
-    catch (Exception ex)
-    {
-        ViewBag.ErrorMessage = $"Error saving guard entry: {ex.Message}";
-        return View(guardsPage);
-    }
+        try
+        {
+            // Initial save to get GuardsId
+            _context.Add(guardsPage);
+            await _context.SaveChangesAsync();
 
-    return RedirectToAction("Create");
-}
+            Console.WriteLine("Signature received: " + guardsPage.Signature);
+
+            var containerName = _configuration["AzureBlobStorage:ContainerName"];
+            var connectionString = _configuration.GetConnectionString("BlobStorageConnection");
+
+            for (int i = 0; i < imageFiles.Count && i < 4; i++)
+            {
+                var file = imageFiles[i];
+                if (file != null && file.Length > 0)
+                {
+                    string blobName = $"guards/{guardsPage.GuardsId}_image{i + 1}.png";
+                    var imageUrl = await UploadToBlobAsync(file, blobName, connectionString, containerName);
+
+                    switch (i)
+                    {
+                        case 0: guardsPage.ImageUrl1 = imageUrl; break;
+                        case 1: guardsPage.ImageUrl2 = imageUrl; break;
+                        case 2: guardsPage.ImageUrl3 = imageUrl; break;
+                        case 3: guardsPage.ImageUrl4 = imageUrl; break;
+                    }
+                }
+            }
+
+            _context.Update(guardsPage);
+            await _context.SaveChangesAsync();
+        }
+        catch (Exception ex)
+        {
+            // Repopulate dropdown before returning view
+            var shipments = _context.Scan_Images
+                .OrderByDescending(s => s.Id)
+                .ToList();
+            ViewBag.Shipments = new SelectList(shipments, "Id", "Shipment", guardsPage.ScanImageId);
+
+            ViewBag.ErrorMessage = $"Error saving guard entry: {ex.Message}";
+            return View(guardsPage);
+        }
+
+        return RedirectToAction("Create");
+    }
 
 
 
