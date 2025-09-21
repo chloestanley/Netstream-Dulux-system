@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Globalization;
 using System.Text.Json;
 using DULUXFINALPART1.Data;
@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DULUXFINALPART1.Controllers
 {
-    [Authorize(Roles = "Admin,ControlRoom")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -27,78 +27,85 @@ namespace DULUXFINALPART1.Controllers
             _context = context;
         }
 
-     
+
         public IActionResult Index()
         {
-            var now = DateTime.Now;
+            if (User.IsInRole("Admin") || User.IsInRole("ControlRoom"))
+            {
+                // ✅ Admins & ControlRoom still see the dashboard
+                var now = DateTime.Now;
 
-            // ?? Daily data for the last 7 days
-            var dailyData = _context.Scan_Images
-                .Where(x => x.CreatedAt >= now.AddDays(-7))
-                .GroupBy(x => x.CreatedAt.Date)
-                .OrderBy(g => g.Key)
-                .Select(g => new
-                {
-                    Day = g.Key.ToString("ddd"),
-                    Count = g.Count()
-                })
-                .ToList();
+                var dailyData = _context.Scan_Images
+                    .Where(x => x.CreatedAt >= now.AddDays(-7))
+                    .GroupBy(x => x.CreatedAt.Date)
+                    .OrderBy(g => g.Key)
+                    .Select(g => new
+                    {
+                        Day = g.Key.ToString("ddd"),
+                        Count = g.Count()
+                    })
+                    .ToList();
 
-            // ?? Monthly data for the current year
-            var monthlyData = _context.Scan_Images
-                .Where(x => x.CreatedAt.Year == now.Year)
-                .GroupBy(x => x.CreatedAt.Month)
-                .OrderBy(g => g.Key)
-                .Select(g => new
-                {
-                    Month = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(g.Key),
-                    Count = g.Count()
-                })
-                .ToList();
+                var monthlyData = _context.Scan_Images
+                    .Where(x => x.CreatedAt.Year == now.Year)
+                    .GroupBy(x => x.CreatedAt.Month)
+                    .OrderBy(g => g.Key)
+                    .Select(g => new
+                    {
+                        Month = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(g.Key),
+                        Count = g.Count()
+                    })
+                    .ToList();
 
-            // ?? Last LCN capture per day
-            var dailyLCNDetails = _context.Scan_Images
-                .Where(x => x.CreatedAt >= now.AddDays(-7))
-                .GroupBy(x => x.CreatedAt.Date)
-                .OrderBy(g => g.Key)
-                .Select(g => g.OrderByDescending(x => x.CreatedAt).FirstOrDefault())
-                .ToList();
+                var dailyLCNDetails = _context.Scan_Images
+                    .Where(x => x.CreatedAt >= now.AddDays(-7))
+                    .GroupBy(x => x.CreatedAt.Date)
+                    .OrderBy(g => g.Key)
+                    .Select(g => g.OrderByDescending(x => x.CreatedAt).FirstOrDefault())
+                    .ToList();
 
-            // ?? Bubble Chart: Frequency by hour & day of week
-            // ?? Bubble Chart: Frequency by hour & day of week (client-side LINQ)
-            var bubbleChartRawData = _context.Scan_Images
-                .Where(x => x.CreatedAt >= now.AddDays(-7))
-                .AsEnumerable() // ?? Move evaluation to client-side
-                .GroupBy(x => new
-                {
-                    Hour = x.CreatedAt.Hour,
-                    DayOfWeek = (int)x.CreatedAt.DayOfWeek
-                })
-                .Select(g => new
-                {
-                    x = g.Key.Hour,        // x-axis: hour
-                    y = g.Key.DayOfWeek,   // y-axis: day of week (0 = Sunday)
-                    r = g.Count()          // radius: count
-                })
-                .ToList();
+                var bubbleChartRawData = _context.Scan_Images
+                    .Where(x => x.CreatedAt >= now.AddDays(-7))
+                    .AsEnumerable()
+                    .GroupBy(x => new
+                    {
+                        Hour = x.CreatedAt.Hour,
+                        DayOfWeek = (int)x.CreatedAt.DayOfWeek
+                    })
+                    .Select(g => new
+                    {
+                        x = g.Key.Hour,
+                        y = g.Key.DayOfWeek,
+                        r = g.Count()
+                    })
+                    .ToList();
 
+                ViewBag.LCNSPerDayLabels = JsonSerializer.Serialize(dailyData.Select(d => d.Day));
+                ViewBag.LCNSPerDayValues = JsonSerializer.Serialize(dailyData.Select(d => d.Count));
 
-            // ?? ViewBag assignments for charts
-            ViewBag.LCNSPerDayLabels = JsonSerializer.Serialize(dailyData.Select(d => d.Day));
-            ViewBag.LCNSPerDayValues = JsonSerializer.Serialize(dailyData.Select(d => d.Count));
+                ViewBag.LCNSPerMonthLabels = JsonSerializer.Serialize(monthlyData.Select(m => m.Month));
+                ViewBag.LCNSPerMonthValues = JsonSerializer.Serialize(monthlyData.Select(m => m.Count));
 
-            ViewBag.LCNSPerMonthLabels = JsonSerializer.Serialize(monthlyData.Select(m => m.Month));
-            ViewBag.LCNSPerMonthValues = JsonSerializer.Serialize(monthlyData.Select(m => m.Count));
+                ViewBag.LastLCNDayLabels = JsonSerializer.Serialize(dailyLCNDetails.Select(d => d?.CreatedAt.ToString("ddd") ?? "--"));
+                ViewBag.LastLCNTimeValues = JsonSerializer.Serialize(dailyLCNDetails.Select(d => d?.CreatedAt.ToString("HH:mm") ?? "--"));
 
-            ViewBag.LastLCNDayLabels = JsonSerializer.Serialize(dailyLCNDetails.Select(d => d?.CreatedAt.ToString("ddd") ?? "--"));
-            ViewBag.LastLCNTimeValues = JsonSerializer.Serialize(dailyLCNDetails.Select(d => d?.CreatedAt.ToString("HH:mm") ?? "--"));
+                ViewBag.BubbleChartData = JsonSerializer.Serialize(bubbleChartRawData);
 
-            ViewBag.BubbleChartData = JsonSerializer.Serialize(bubbleChartRawData);
+                return View(); // dashboard view
+            }
+            else if (User.IsInRole("Guard"))
+            {
+                return RedirectToAction("Note", "Scan_Image");
+            }
+            else if (User.IsInRole("ScanOperator"))
+            {
+                return RedirectToAction("Create", "Scan_Image");
+            }
 
-            return View();
+            // fallback: redirect to login
+            return RedirectToAction("Login", "Account");
         }
 
-      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

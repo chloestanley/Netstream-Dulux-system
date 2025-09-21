@@ -45,8 +45,8 @@ public class LoginModel : PageModel
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
-        public bool RememberMe { get; set; }
+        //[Display(Name = "Remember me?")]
+        //public bool RememberMe { get; set; }
     }
 
     public async Task OnGetAsync(string returnUrl = null)
@@ -73,7 +73,14 @@ public class LoginModel : PageModel
 
         if (ModelState.IsValid)
         {
-            var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+
+            var result = await _signInManager.PasswordSignInAsync(
+            Input.Email,
+            Input.Password,
+            isPersistent: false, // 👈 ALWAYS false
+            lockoutOnFailure: false
+        );
+
             if (result.Succeeded)
             {
                 var user = await _userManager.FindByEmailAsync(Input.Email);
@@ -111,7 +118,7 @@ public class LoginModel : PageModel
             }
             if (result.RequiresTwoFactor)
             {
-                return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl});
             }
             if (result.IsLockedOut)
             {
