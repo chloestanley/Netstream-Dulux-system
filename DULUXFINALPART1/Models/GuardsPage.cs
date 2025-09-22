@@ -97,6 +97,8 @@ namespace DULUXFINALPART1.Models
         [StringLength(50)] public string? TrailerVin { get; set; }
         [StringLength(50)] public string? TrailerEngineNumber { get; set; }
         [StringLength(50)] public string? TrailerExpiryDate { get; set; }
+        public bool IsReturn { get; set; }
+
     }
 
     public enum AcceptanceStatus

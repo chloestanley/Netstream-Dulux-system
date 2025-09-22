@@ -127,10 +127,12 @@ async Task SeedRolesAsync(IServiceProvider serviceProvider)
     }
 
     // Optionally: Seed users for each role
-    await SeedUserWithRole(userManager, "admin@example.com", "Admin123!", "Admin");
-    await SeedUserWithRole(userManager, "control@example.com", "Tushar1?", "ControlRoom");
-    await SeedUserWithRole(userManager, "guard@example.com", "Tushar1!!", "Guard");
-    await SeedUserWithRole(userManager, "scan@example.com", "Tushar1@", "ScanOperator");
+    await SeedUserWithRole(userManager, "admin@system.com", "Admin123!", "Admin");
+    await SeedUserWithRole(userManager, "control@system.com", "Control123!", "ControlRoom");
+    await SeedUserWithRole(userManager, "guard@system.com", "Guard123!", "Guard");
+    await SeedUserWithRole(userManager, "scan@system.com", "Scan123!", "ScanOperator");
+
+
 }
 
 async Task SeedUserWithRole(UserManager<ApplicationUser> userManager, string email, string password, string role)

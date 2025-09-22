@@ -41,17 +41,22 @@
                 <!-- Guard Details -->
                 <fieldset class="border border-success p-3 rounded mb-4">
                     <legend class="text-success fw-bold">Guard Details</legend>
+
+                    <!-- Displayed readonly fields -->
                     <div class="form-group mb-3">
-                        <label asp-for="Guard_Name" class="fw-bold text-success">Guard Name</label>
-                        <input asp-for="Guard_Name" class="form-control border-success" placeholder="Enter guard name" />
-                        <span asp-validation-for="Guard_Name" class="text-danger"></span>
+                        <label class="fw-bold text-success">Guard Name</label>
+                        <input type="text" class="form-control border-success" value="Michael Thompson" readonly />
                     </div>
                     <div class="form-group mb-3">
-                        <label asp-for="Guard_SecurityCard_No" class="fw-bold text-success">Security Card No</label>
-                        <input asp-for="Guard_SecurityCard_No" class="form-control border-success" placeholder="Enter security card number" />
-                        <span asp-validation-for="Guard_SecurityCard_No" class="text-danger"></span>
+                        <label class="fw-bold text-success">PSiRA Card No</label>
+                        <input type="text" class="form-control border-success" value="3178954" readonly />
                     </div>
+
+                    <!-- Hidden fields that get posted to the controller -->
+                    <input type="hidden" name="Guard_Name" value="Michael Thompson" />
+                    <input type="hidden" name="Guard_SecurityCard_No" value="3178954" />
                 </fieldset>
+
 
                 <!-- Driver Details -->
                 <fieldset class="border border-success p-3 rounded mb-4">
@@ -70,7 +75,7 @@
 
                 <!-- Date and Image Uploads -->
                 <fieldset class="border border-success p-3 rounded mb-4">
-                    <legend class="text-success fw-bold">Date and Images</legend>
+                    <legend class="text-success fw-bold">Date, Images and Scanning</legend>
                     <div class="form-group mb-3">
                         <label asp-for="DateTime" class="fw-bold text-success">Date and Time</label>
                         <input asp-for="DateTime" type="datetime-local" class="form-control border-success" id="DateTimeInput" />
@@ -95,7 +100,7 @@
                     <label class="fw-bold text-success">Upload or Scan Documents</label>
 
                     <div class="form-group mb-3">
-                        <label class="text-success">Shipment Image</label>
+                        <label class="text-success">Driver's License  Image</label>
                         <input type="file" class="form-control border-success" name="imageFiles" />
                     </div>
 
@@ -307,6 +312,14 @@
                         @Html.DisplayNameFor(model => model.SendToControlRoom)
                     </label>
                 </div>
+                <!-- Return Checkbox -->
+                <div class="form-group form-check mb-4">
+                    <input class="form-check-input border-success" type="checkbox" asp-for="IsReturn" id="IsReturn" />
+                    <label class="form-check-label text-success fw-bold" for="IsReturn">
+                        Return Load
+                    </label>
+                </div>
+
 
                 <!-- Submit -->
                 <div class="form-group mb-5">
