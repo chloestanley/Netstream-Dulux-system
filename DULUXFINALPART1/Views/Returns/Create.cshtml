@@ -1,4 +1,5 @@
-﻿@model DULUXFINALPART1.Models.Return
+﻿@model DULUXFINALPART1.Models.ReturnCreateViewModel
+
 
 @{
     ViewData["Title"] = "Create";
@@ -41,7 +42,8 @@
                 </div>
 
                 <!-- Hidden field to hold selected delivery numbers -->
-                <input type="hidden" name="SelectedDeliveries" id="SelectedDeliveries" />
+                <input type="hidden" asp-for="SelectedDeliveries" id="SelectedDeliveries" />
+
 
                 <!-- Comments Section -->
                 <div class="mb-3">

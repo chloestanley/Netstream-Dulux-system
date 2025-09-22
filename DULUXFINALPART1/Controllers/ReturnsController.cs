@@ -45,54 +45,60 @@ namespace DULUXFINALPART1.Controllers
         // GET: Returns/Create
         public IActionResult Create()
         {
+            var vm = new ReturnCreateViewModel
+            {
+                AvailableDeliveries = new List<string>() // initially empty
+            };
+
             ViewData["ScanImageId"] = new SelectList(_context.Scan_Images, "Id", "Shipment");
-            return View();
+            return View(vm);
         }
+
 
         // POST: Returns/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ScanImageId,Comments")] Return @return, string SelectedDeliveries)
+        public async Task<IActionResult> Create(ReturnCreateViewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                if (!string.IsNullOrEmpty(SelectedDeliveries))
-                {
-                    var deliveryList = SelectedDeliveries.Split(',', StringSplitOptions.RemoveEmptyEntries);
-
-                    foreach (var deliveryNumber in deliveryList)
-                    {
-                        var existingReturn = _context.Returns
-                            .Any(r => r.DeliveryNumber == deliveryNumber);
-
-                        if (existingReturn)
-                        {
-                            ModelState.AddModelError("", $"Delivery number {deliveryNumber} has already been used.");
-                            return View(@return);
-                        }
-
-                        var newReturn = new Return
-                        {
-                            ScanImageId = @return.ScanImageId,
-                            Comments = @return.Comments,
-                            DeliveryNumber = deliveryNumber
-                        };
-
-                        newReturn.SetReturnCreatedAt();
-
-                        _context.Add(newReturn);
-                    }
-
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
-
-                ModelState.AddModelError("", "Please select at least one delivery number.");
+                ViewData["ScanImageId"] = new SelectList(_context.Scan_Images, "Id", "Shipment", model.ScanImageId);
+                return View(model);
             }
 
-            ViewData["ScanImageId"] = new SelectList(_context.Scan_Images, "Id", "Shipment", @return.ScanImageId);
-            return View(@return);
+            if (model.SelectedDeliveries == null || !model.SelectedDeliveries.Any())
+            {
+                ModelState.AddModelError("", "Please select at least one delivery number.");
+                ViewData["ScanImageId"] = new SelectList(_context.Scan_Images, "Id", "Shipment", model.ScanImageId);
+                return View(model);
+            }
+
+            foreach (var deliveryNumber in model.SelectedDeliveries)
+            {
+                // Check if already used
+                var exists = _context.Returns.Any(r => r.DeliveryNumber == deliveryNumber);
+                if (exists)
+                {
+                    ModelState.AddModelError("", $"Delivery number {deliveryNumber} has already been used.");
+                    ViewData["ScanImageId"] = new SelectList(_context.Scan_Images, "Id", "Shipment", model.ScanImageId);
+                    return View(model);
+                }
+
+                var newReturn = new Return
+                {
+                    ScanImageId = model.ScanImageId.Value,
+                    Comments = model.Comments,
+                    DeliveryNumber = deliveryNumber
+                };
+
+                newReturn.SetReturnCreatedAt();
+                _context.Returns.Add(newReturn);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
+
 
         // GET: Returns/Edit/5
         public async Task<IActionResult> Edit(int? id)
